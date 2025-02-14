@@ -1,0 +1,44 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = pd.read_csv("Set1.csv")
+
+print(data.head())
+print(data["Debut Year"])
+print(data.info())
+
+#Scatter Plot
+plt.figure(figsize=(8, 6))
+plt.scatter(data['Debut Year'], data['Spotify Followers'])
+plt.title('Spotify Followers by Debut Year')
+plt.xlabel('Debut Year')
+plt.ylabel('Spotify Followers')
+plt.grid(True)
+plt.tight_layout()
+plt.savefig('ScatterPlotFollowers.png')
+plt.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

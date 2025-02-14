@@ -1,0 +1,19 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = pd.read_csv("Set2.csv")
+
+print(data.head())
+print(data["Debut Year"])
+print(data.info())
+
+#Scatter Plot
+plt.figure(figsize=(8, 6))
+plt.scatter(data['Member Count'], data['Debut Year'])
+plt.title('Debut Year by Memebers Count')
+plt.xlabel('Member Count')
+plt.ylabel('Debut Year')
+plt.grid(True)
+plt.tight_layout()
+plt.savefig('ScatterPlotMembers.png')
+plt.close()
