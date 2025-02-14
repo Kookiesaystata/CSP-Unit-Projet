@@ -10,7 +10,7 @@ print(data.info())
 #Scatter Plot
 plt.figure(figsize=(8, 6))
 plt.scatter(data['Member Count'], data['Debut Year'])
-plt.title('Debut Year by Memebers Count')
+plt.title('Debut Year by Members Count')
 plt.xlabel('Member Count')
 plt.ylabel('Debut Year')
 plt.grid(True)
